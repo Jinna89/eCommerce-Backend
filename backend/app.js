@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
-import {xss} from "express-xss-sanitizer";
+import { xss } from "express-xss-sanitizer";
 import hpp from "hpp";
 import rateLimit from "express-rate-limit";
 import cookieParser from "cookie-parser";
@@ -13,28 +13,24 @@ dotenv.config();
 
 const app = express();
 
-// Database
 mongoose
   .connect(process.env.MONGO_URL)
   .then(() => console.log("DB Connected"))
-  .catch((err) => console.log(err));
+  .catch((err) => console.log("DB connection error:", err.message));
 
-  app.set('json spaces', 2);
+app.set("json spaces", 2);
 
-// Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: true,
+    credentials: true,
+  }),
+);
 app.use(helmet());
-app.use(express.json());
+app.use(express.json({ limit: "50mb" }));
 app.use(xss());
 app.use(hpp());
 app.use(cookieParser());
-app.use(
-  express.json({
-    limit: "50mb",
-  }),
-);
-
-// Rate Limit
 app.use(
   rateLimit({
     windowMs: 15 * 60 * 1000,
@@ -42,12 +38,23 @@ app.use(
   }),
 );
 
-// Routes
+app.get("/health", (_req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
 app.use("/routes/api", router);
 
-const PORT = 5030;
+app.use((req, res) => {
+  res.status(404).json({
+    status: "fail",
+    message: `Route not found: ${req.method} ${req.originalUrl}`,
+  });
+});
+
+const PORT = Number(process.env.PORT || 5030);
 
 app.listen(PORT, () => {
   console.log(`App running on ${PORT}`);
 });
+
 export default app;

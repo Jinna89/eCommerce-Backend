@@ -1,0 +1,649 @@
+{
+  "info": {
+    "_postman_id": "801d016e-a755-4d72-b1f0-26ffa25abd24",
+    "name": "eCommerce",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "36222687"
+  },
+  "item": [
+    {
+      "name": "Product",
+      "item": [
+        {
+          "name": "ProductBrandList",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}ProductBrandList",
+              "host": [
+                "{{BaseURL}}ProductBrandList"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ProductCategoryList",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}ProductCategoryList",
+              "host": [
+                "{{BaseURL}}ProductCategoryList"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ProductSliderList",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}ProductSliderList",
+              "host": [
+                "{{BaseURL}}ProductSliderList"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ProductListByBrand",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}ProductListByBrand/64f8751a502e1b80556da142",
+              "host": [
+                "{{BaseURL}}ProductListByBrand"
+              ],
+              "path": [
+                "64f8751a502e1b80556da142"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ProductListByCategory",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}ProductListByCategory/64f875ed502e1b80556da14d",
+              "host": [
+                "{{BaseURL}}ProductListByCategory"
+              ],
+              "path": [
+                "64f875ed502e1b80556da14d"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ProductListBySmiler",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}ProductListBySmiler/64f875ed502e1b80556da14d",
+              "host": [
+                "{{BaseURL}}ProductListBySmiler"
+              ],
+              "path": [
+                "64f875ed502e1b80556da14d"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ProductListByRemark",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}ProductListByRemark/top",
+              "host": [
+                "{{BaseURL}}ProductListByRemark"
+              ],
+              "path": [
+                "top"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ProductListByKeyword",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}ProductListByKeyword/MacBook",
+              "host": [
+                "{{BaseURL}}ProductListByKeyword"
+              ],
+              "path": [
+                "MacBook"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ProductDetails",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}ProductDetails/651da44d1ce672f6c8b7961d",
+              "host": [
+                "{{BaseURL}}ProductDetails"
+              ],
+              "path": [
+                "651da44d1ce672f6c8b7961d"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReviewList",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}ReviewList/64f8ba608fcc62fe3de37a2e",
+              "host": [
+                "{{BaseURL}}ReviewList"
+              ],
+              "path": [
+                "64f8ba608fcc62fe3de37a2e"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "UserOTP",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}UserOTP/freelancerjinna@gmail.com",
+              "host": [
+                "{{BaseURL}}UserOTP"
+              ],
+              "path": [
+                "freelancerjinna@gmail.com"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "VerifyLogin",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}VerifyLogin/freelancerjinna@gmail.com/0",
+              "host": [
+                "{{BaseURL}}VerifyLogin"
+              ],
+              "path": [
+                "freelancerjinna@gmail.com",
+                "0"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UserLogOut",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}UserLogOut",
+              "host": [
+                "{{BaseURL}}UserLogOut"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreateProfile",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cus_add\": \"Padua, Chauddagram, Cumilla\",\n  \"cus_city\": \"Cumilla\",\n  \"cus_country\": \"Bangladesh\",\n  \"cus_fax\": \"01879422939\",\n  \"cus_name\": \"Jinna\",\n  \"cus_phone\": \"01879422939\",\n  \"cus_postcode\": \"3583\",\n  \"cus_state\": \"Dhaka\",\n  \"ship_add\": \"Padua, Chauddagram, Cumilla\",\n  \"ship_city\": \"Padua, Chauddagram, Cumilla\",\n  \"ship_country\": \"Bangladesh\",\n  \"ship_name\": \"Jinna\",\n  \"ship_phone\": \"01879422939\",\n  \"ship_postcode\": \"3583\",\n  \"ship_state\": \"Cumilla\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}CreateProfile",
+              "host": [
+                "{{BaseURL}}CreateProfile"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateProfile",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cus_add\": \"Padua, Chauddagram, Cumilla\",\n  \"cus_city\": \"Cumilla\",\n  \"cus_country\": \"Bangladesh\",\n  \"cus_fax\": \"01879422939\",\n  \"cus_name\": \"Jinna\",\n  \"cus_phone\": \"01879422939\",\n  \"cus_postcode\": \"3583\",\n  \"cus_state\": \"Dhaka\",\n  \"ship_add\": \"Padua, Chauddagram, Cumilla\",\n  \"ship_city\": \"Padua, Chauddagram, Cumilla\",\n  \"ship_country\": \"Bangladesh\",\n  \"ship_name\": \"Jinna\",\n  \"ship_phone\": \"01879422939\",\n  \"ship_postcode\": \"3583\",\n  \"ship_state\": \"Cumilla\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}UpdateProfile",
+              "host": [
+                "{{BaseURL}}UpdateProfile"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReadProfile",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cus_add\": \"Padua, Chauddagram, Cumilla\",\n  \"cus_city\": \"Cumilla\",\n  \"cus_country\": \"Bangladesh\",\n  \"cus_fax\": \"01879422939\",\n  \"cus_name\": \"Jinna\",\n  \"cus_phone\": \"01879422939\",\n  \"cus_postcode\": \"3583\",\n  \"cus_state\": \"Dhaka\",\n  \"ship_add\": \"Padua, Chauddagram, Cumilla\",\n  \"ship_city\": \"Padua, Chauddagram, Cumilla\",\n  \"ship_country\": \"Bangladesh\",\n  \"ship_name\": \"Jinna\",\n  \"ship_phone\": \"01879422939\",\n  \"ship_postcode\": \"3583\",\n  \"ship_state\": \"Cumilla\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}ReadProfile",
+              "host": [
+                "{{BaseURL}}ReadProfile"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Wish",
+      "item": [
+        {
+          "name": "WishList",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}WishList",
+              "host": [
+                "{{BaseURL}}WishList"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SaveWishList",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"productID\": \"654dbf28abda0c85053c9904\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}SaveWishList",
+              "host": [
+                "{{BaseURL}}SaveWishList"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "RemoveWishList",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"productID\": \"654dbf28abda0c85053c9904\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}RemoveWishList",
+              "host": [
+                "{{BaseURL}}RemoveWishList"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Cart",
+      "item": [
+        {
+          "name": "CartList",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}CartList",
+              "host": [
+                "{{BaseURL}}CartList"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SaveCartList",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"productID\": \"654dbf28abda0c85053c9904\",\n    \"color\": \"Black\",\n    \"qty\": \"5\",\n    \"size\": \"15\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}SaveCartList",
+              "host": [
+                "{{BaseURL}}SaveCartList"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateCartList",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"color\": \"Black\",\n    \"qty\": \"3\",\n    \"size\": \"13\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}UpdateCartList/697386d225be0965a1d3d9ab",
+              "host": [
+                "{{BaseURL}}UpdateCartList"
+              ],
+              "path": [
+                "697386d225be0965a1d3d9ab"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "RevoveCartList",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"productID\": \"65d1b09d6c05aa9a79a868ad\",\n    \"_id\": \"697386d225be0965a1d3d9ab\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}RevoveCartList",
+              "host": [
+                "{{BaseURL}}RevoveCartList"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Invoice",
+      "item": [
+        {
+          "name": "CreateInvoice",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"productID\": \"65d1b09d6c05aa9a79a868ad\",\n    \"_id\": \"697386d225be0965a1d3d9ab\"\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}CreateInvoice",
+              "host": [
+                "{{BaseURL}}CreateInvoice"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "InvoiceList",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}InvoiceList",
+              "host": [
+                "{{BaseURL}}InvoiceList"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "InvoiceProductList",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BaseURL}}InvoiceProductList/69784d5e575e43335bf04f66",
+              "host": [
+                "{{BaseURL}}InvoiceProductList"
+              ],
+              "path": [
+                "69784d5e575e43335bf04f66"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Features",
+      "item": [
+        {
+          "name": "FeaturesList",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}FeaturesList",
+              "host": [
+                "{{BaseURL}}FeaturesList"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "LegalDetails",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BaseURL}}LegalDetails/contact",
+              "host": [
+                "{{BaseURL}}LegalDetails"
+              ],
+              "path": [
+                "contact"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "BaseURL",
+      "value": ""
+    }
+  ]
+}
